@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = prompt("Digite um número maior que 0 e menor que 11");
+        try{
+            if(x<=0){
+                throw("er1");
+            }
+            if(x>=11){
+                throw("er2");
+            }
+            if(isNaN(parseInt(x))) {
+                throw("er3");
+            }
+        }
+        catch(e) {
+            if(e == "er1"){
+                alert("O numero tem que ser maior que zero!");
+            }
+            if(e == "er2"){
+                alert("O número deve ser menor que 11");
+            }
+            if(e == "er3"){
+                alert("Entre somente maior que 0 e menor que 11");
+            }
+        }
+    </script>
+</body>
+</html>
