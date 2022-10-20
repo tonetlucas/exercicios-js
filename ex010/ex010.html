@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <script>
+        //usando o forEach
+        var arr = [21, 3, "a", 290]
+        var msg = "";
+        function funcaoUm(elem, ind, obj){
+            msg += "arr[" + ind + "] = " + elem + "\n"
+        }
+        arr.forEach(funcaoUm)
+        console.log(msg);
+    </script>
+</body>
+</html>

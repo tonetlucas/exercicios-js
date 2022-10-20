@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercício 15</title>
 </head>
 <body>
     <script>
-        var pares = ""; 
+        var arr = [6, 2, 21];
+        funcaoUm = function(v1, v2, ind, arr){
+            return v1 + v2;
+        }
+        var x = arr.reduceRight(funcaoUm);
+        alert(x);
     </script>
 </body>
 </html>
